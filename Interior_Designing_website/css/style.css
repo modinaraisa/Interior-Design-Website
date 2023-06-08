@@ -1,0 +1,143 @@
+body {
+	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/login/bg.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.ca:hover {
+	text-decoration: underline;
+} 
+
+.home-nav a {
+	padding: 10px;
+	color: #f7bd65;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ .welcome button{
+	background: #ff8b47;
+	border-radius : 20px;
+	border: none;
+	color : #fff;
+	padding : 10px;
+	width: 100%;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-left:-40px;
+	margin-top: 40px;
+}
+
+.about-section{
+	min-height : 100vh;
+	display: flex;
+	align-items : center;
+	justify-content : center;
+	
+	margin-top : -15px;
+	background : url(../img/about/about.jpg) no-repeat left;
+	background-size : 100%;
+	background-color : #fdfdfd;
+	overflow : hidden;
+	padding: 100px 0;
+}
+
+.inner-container{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd;
+	padding : 150px;
+	
+}
+
+.profile p{
+	
+	font-family : ALGERIAN;
+	color: #FFFFFF;
+	font-size : 60px;
+}
+
+.info p{
+	font-family : Arial Black;
+	color:#ff8b47;
+	font-size : 30px;
+	
+}

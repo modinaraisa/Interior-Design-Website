@@ -1,0 +1,788 @@
+body{
+	background: #f5f5f5;
+}
+
+.header {
+            text-align: center;
+            padding: 25px 0px 15px 0px;
+        }
+		
+		.header .UpLogo p {
+            color: #1b0e06;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+		
+		 .header .navbar-nav {
+            margin: auto;
+			text-align :center
+        }
+
+        .header .navbar a {
+            font-size:20px;
+            font-weight: 1000;
+		
+        }
+
+        .header .navbar-light .navbar-nav .nav-link {
+            color: #222222;
+            padding: 0px 22px;
+        }
+		
+		 .header .bg-light {
+            background-color: transparent !important;
+        }
+
+ /* Design Gallery Section  */       
+
+.rooms{
+	text-align :center;
+	margin-top : 10px;
+	padding : 20px;
+	font-family: Century Gothic;
+	color :#ff8b47;
+	font-weight : 400;
+	
+}		
+		
+.grid{
+	margin: 80px;
+	display: grid;
+	grid-template-columns : repeat(3,1fr);
+	grid-gap: 30px;
+	align-items : center;
+	grid-row-gap : 80px;
+}
+
+.grid > article{
+	background :#f5f5f5;
+	border : none ;
+	box-shadow : 2px 2px 6px 0px;
+	text-align: center;
+	width : 420px;
+	transition :transform.3s;
+	
+}	
+
+.grid >article:hover{
+	transform: translateY(5px);
+	box-shadow: 2px 2px 26px 0px;
+	
+	
+}
+
+grid >article img{
+	width : 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+}	
+.text{
+	padding: 0 20px 20px; 
+}
+
+.text h3{
+	text-transform: uppercase;
+	font-family : Lucida Sans;
+}
+
+.text button{
+	background: #ff8b47;
+	border-radius : 20px;
+	border: none;
+	color : #fff;
+	padding : 10px;
+	width: 40%;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	
+}
+
+@media (max-width: 768px){
+
+.grid{
+	grid-template-columns: repeat(2, 1fr);
+	
+	}
+}
+
+@media (max-width: 500px){
+
+	.grid{
+	grid-template-columns: repeat(1, 1fr);
+	
+	}
+	.grid > article{
+	text-align : center;
+	}
+}
+
+/* Navigation Bar section */
+.wrapper{
+	   background : url(../img/background/back.jpg) no-repeat;
+		background-size  : cover;
+		height : 100vh;
+	
+}
+
+
+.navbar {
+	margin : 0;
+	padding : 0;
+	list-style : none;
+	text-decoration : none;
+	
+	
+}
+
+nav{
+	height : 80px;
+	background :#ff670e
+	
+}
+
+nav img {
+	
+	width: 150px;
+	position : absolute;
+	top: 17px;
+	left : 12%;
+	
+}
+
+nav ul {
+	float : center;
+	
+	
+}
+
+nav ul li {
+	display : inline-block;
+	line-height : 80px;
+	margin : 0 15px;
+	
+	
+}
+
+nav ul li a{
+	
+	position : relative;
+	color : white;
+	font-size : 30px;
+	padding : 5px 0;
+	text-transform: uppercase;
+	text-align : center;
+	font-family : Georgia;
+}
+
+nav ul li a:before{
+	
+	position: absolute;
+	content: '';
+	left : 0;
+	bottom: 0;
+	height : 3px;
+	width : 100%;
+	background : white;
+	transform : scaleX(0);
+	transform-origin : right; 
+	transition: transform.4s linear;
+	
+} 
+
+nav ul li a:hover:before{
+	transform : scaleX(1);
+	transform-origin: left;
+	
+}
+
+label #btn,
+label #cancel{
+	color: white;
+	font-size: 30px;
+	float : right;
+	line-height : 80px;
+	margin-right: 40px;
+	cursor : pointer;
+	display: none;
+}
+#check{
+	display : none;
+}
+
+.wrapper .center{
+	position: absolute;
+	top: 50%;
+	Left: 55%;
+	transform : translate(-50%,-50%);
+	font-family : sans-serif;
+	user-select:none;
+}
+
+@media (max-width: 944px){
+	nav img{
+		left: 6%;
+		top: 20px;
+		width : 130px;
+		
+		
+	}
+	
+	nav ul li a{
+		font-size : 17px;
+	}
+}
+
+@media (max-width: 860px){
+	label #btn{
+		display : block;
+	}
+	
+	ul {
+		position: fixed;
+		width : 100%;
+		height : 100vh;
+		background : #ff670e;
+		top : 80px;
+		left : -100%;
+		text-align : center;
+		transition :  all.5s;
+	}
+	
+	nav ul li{
+		display : block;
+		margin : 50px 0;
+		line-height: 30px;
+	}
+	
+	nav ul li a{
+		font-size : 20px;
+	}
+	
+	#check:checked ~ ul{
+		left: 0;
+	}
+	#check:checked ~ label #btn{
+		display: none;
+	}
+	#check:checked ~ label #cancel{
+		display: block;
+	}
+}
+
+
+
+/* Website Headline*/
+.headline{
+	
+	display : inline-block;
+	line-height : 80px;
+	margin: 0 auto;
+	font-family :Cooper black;
+	background : #522f17;
+	width :100%;
+	color : #FFFFFF;
+}
+
+/* About Section*/
+
+
+.about-section{
+	min-height : 100vh;
+	display: flex;
+	align-items : center;
+	justify-content : center;
+	
+	margin-top : -15px;
+	background : url(../img/about/about.jpg) no-repeat left;
+	background-size : 100%;
+	background-color : #fdfdfd;
+	overflow : hidden;
+	padding: 100px 0;
+}
+
+.inner-container{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd;
+	padding : 150px;
+	
+}
+.inner-container h1{
+	margin-bottom: 30px;
+	font-size : 30px;
+	font-weight : 800;
+}
+
+.border{
+	
+	height : 4px;
+	width : 250px;
+	background-color: #ff670e;
+	margin-left : 145px; 
+	
+}
+
+.text{
+	font-size : 20px;
+	color: #545454;
+	line-height :30px;
+	text-align : center;
+	margin-bottom : 40px;
+}
+
+/* Individual page of design Gallery*/
+
+.desHeading{
+	
+	padding-top : 30px;
+	font-family : Century Gothic;
+	text-align : center;
+	 font-weight: 900;
+	color : #FF0000;
+	margin-bottom :50px;
+	margin-left: 10px;
+	
+}
+
+.inner-container-des{
+	width: 60%;
+	float: center;
+	background-color: #ffaa78;
+	padding : 150px;
+	margin-left :330px
+}
+
+.inner-container-des h1{
+	margin-bottom: 30px;
+	font-size : 30px;
+	font-weight : 800;
+}
+
+.border-des{
+	
+	height : 4px;
+	width : 250px;
+	background-color: #ff670e;
+	margin-left : 180px; 
+	
+}
+
+.text-des{
+	font-size : 20px;
+	color: #545454;
+	line-height :30px;
+	text-align : center;
+	margin-bottom : 40px;
+	margin-top : 70px;
+}
+
+.button-des{
+	display : block;
+	background: #FF0000;
+	border-radius : 20px;
+	border: none;
+	color : #FFFFFF;
+	padding : 10px;
+	width: 30%;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-left :210px;
+	height :60px;
+	font-family : Lucida Sans;
+	transition: all 0.3s linear;
+}
+
+.button-des:hover,
+.button-des:focus{
+	
+	background :#FF7F7F;
+}
+
+.button-des :active{
+	background: #8B0000;
+}
+
+/* Service Section*/
+
+.services-section{
+	min-height : 100vh;
+	display: flex;
+	align-items : center;
+	justify-content : center;
+	
+	margin-top : -15px;
+	background : url(../img/about/about.jpg) no-repeat left;
+	background-size : 100%;
+	background-color : #D3D3D3;
+	overflow : hidden;
+	padding: 100px 0;
+}
+
+.inner-container-service{
+	width: 80%;
+	float: right;
+	background-color: #fdfdfd;
+	padding : 150px;
+	margin-bottom : 30px;
+	
+}
+
+.inner-container-service h1{
+	
+	color : #FF0000;
+	font-family :Goudy Old Style;
+	margin-bottom: 50px;
+	font-size :50px;
+}
+
+
+.grid-serv{
+	margin:10px;
+	display: grid;
+	grid-template-columns : repeat(3,1fr);
+	grid-gap: 30px;
+	align-items: left;
+	grid-row-gap : 80px;
+}
+
+.grid-serv > article{
+	background :#f5f5f5;
+	border : none ;
+	box-shadow : 2px 2px 6px 0px;
+	text-align: center;
+	width : 300px;
+	transition :transform.3s;
+	
+}	
+
+.grid-serv >article:hover{
+	transform: translateY(5px);
+	box-shadow: 2px 2px 26px 0px;
+	
+	
+}
+
+grid-serv >article img{
+	width : 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+}	
+
+.service-sec h3{
+	
+	color: #ff8b47;
+}
+
+.text-serv{
+	padding: 0 20px 20px;
+	
+}
+
+.text-serv ol li{
+	margin-top : 15px;
+	justify-content :center;
+	font-family : Lucida Sans;
+	color: #0000FF;
+}
+
+.text-serv h3{
+	color :#FF0000;
+}
+
+.text-serv button{
+	margin-top : 15px;
+	background: #ff8b47;
+	border-radius : 20px;
+	border: none;
+	color : #fff;
+	padding : 10px;
+	width: 60%;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	
+}
+
+/* Contact  Section*/
+
+.form-page{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+	font-family : 'Poppins',sans-serif;
+}
+
+.contact{
+	position: relative;
+	min-height : 100vh;
+	padding : 50px 100px;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	flex-direction : column;
+	background :url("../img/services/back2.jpg");
+	
+	background-size : cover;
+	
+}
+
+.contact .content{
+	max-width:800px;
+	text-align: center;
+	
+}
+
+.contact .content h2{
+	
+	font-size : 36px;
+	font-weight :  800;
+	color :#ffffff;
+	
+}
+
+.contact .content p{
+	font-weight : 500;
+	color: #FAF9F6;
+}
+
+.container_contact{
+	width: 100%;
+	display: flex;
+	justify-content :center;
+	align-items : center;
+	margin-top : 30px;
+}
+
+.container_contact .contactInfo{
+	width: 50%;
+	display : flex;
+	flex-direction :column;
+	align-items : left;
+}
+
+.container_contact .contactInfo .box{
+	position :relative;
+	padding : 20px 0;
+	display : flex;
+}
+
+.container_contact .contactInfo .box .icon{
+	min-width : 60px;
+	height : 60px;
+	background : #fff;
+	display :flex;
+	justify-content : center;
+	align-items :center;
+	border-radius : 50%;
+	font-size : 22px;
+	
+}
+ .container_contact .contactInfo .box .text{
+	 display : flex;
+	 margin-left : 20px;
+	 font-size : 17px;
+	 color :  #FFA500;
+	 flex-direction : column;
+	 font-weight : 300;
+	 
+ }
+ 
+  .container_contact .contactInfo .box .text h3{
+	  font-weight : 500;
+	  color : #00bcd4;
+	   text-align: left;
+	  
+  }
+  
+  .container_contact .contactInfo button{
+	background: #ff8b47;
+	border-radius : 20px;
+	border: none;
+	color : #fff;
+	padding : 10px;
+	width: 30%;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-left:-20px;
+}
+  
+  .form-holder{
+	  width : 40%;
+	  padding : 40px;
+	  background : #fff;
+  }
+  
+  .form-holder h2{
+	  font-size: 30px;
+	  color : #333;
+	  font-weight : 500;
+  }
+  
+  .form-holder .inputBox{
+	  position : relative;
+	  width : 100%;
+	  margin-top : 10px;
+	  
+  }
+  
+  .form-holder .inputBox input,
+  .form-holder .inputBox textarea{
+	  width :100%;
+	  padding : 5px 0;
+	  font-size : 16px;
+	  margin : 10px 0;
+	  border : none;
+	 border-bottom : 2px solid #333;
+	 outline : none;
+	 resize : none;
+	 
+	 
+  }
+  
+  .form-holder inputBox span{
+	  position : absolute;
+	  left: 0;
+	  padding : 5px 0;
+	  font-size : 16px;
+	  margin: 10px 0;
+	  pointer-events : none;
+	  transition : 0.5s;
+	  color : #666;
+	  
+  }
+  
+  .form-holder inputBox input:focus~span,
+  .form-holder inputBox input:valid~span,
+  .form-holder inputBox textarea:focus~span'
+  .form-holder inputBox textarea:valid~span{
+	color : e91e63;
+	font-size : 12px;
+	transform:translateY(-20px);
+  
+  }
+  
+  .form-holder inputBox input[type="submit"]
+  {
+	  width : 100px;
+	  background : #00bcd4;
+	  color : #fff;
+	  border : none;
+	  cursor : pointer;
+	  padding : 10px;
+	  font-size : 18px;
+}
+
+@media (max-width: 991px){
+	.contact{
+		padding :50px;
+	}
+	
+	.container_contact{
+		flex-direction: column;
+	}
+	
+	.container_contact .contactInfo{
+		margin-bottom : 40px;
+		
+	}
+	
+	.container_contact .contactInfo{
+		width : 100%;
+	}
+}
+
+
+/* Team Page Section*/
+
+.team-section{
+	min-height : 100vh;
+	display: flex;
+	align-items : center;
+	justify-content : center;
+	
+	margin-top : -15px;
+	background : url(../img/services/back.jpg) no-repeat left;
+	background-size : 100%;
+	background-color : #fdfdfd;
+	overflow : hidden;
+	padding: 100px 0;
+}
+
+.inner-container-team{
+	width: 80%;
+	float: right;
+	background-color: #fdfdfd;
+	padding : 150px;
+	margin-bottom : 30px;
+	
+}
+
+.inner-container-team h3{
+	
+	color : #FF0000;
+	font-family :Goudy Old Style;
+	margin-bottom: 50px;
+	font-size :40px;
+}
+
+
+.grid-team{
+	margin:20px;
+	display: grid;
+	grid-template-columns : repeat(2,1fr);
+	grid-gap: 30px;
+	align-items: left;
+	grid-row-gap : 80px;
+}
+
+.grid-team > article{
+	background :#f5f5f5;
+	border : none ;
+	box-shadow : 2px 2px 6px 0px;
+	text-align: center;
+	width : 380px;
+	transition :transform.3s;
+	
+}	
+
+.grid-team >article:hover{
+	transform: translateY(5px);
+	box-shadow: 2px 2px 26px 0px;
+	
+	
+}
+
+grid-team >article img{
+	width : 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+}	
+.text-team{
+	padding: 0 20px 20px; 
+}
+
+.text-team h4{
+	color : #FF0000;
+	font-family : Consolas;
+	font-size : 30px;
+}
+
+.text-team p{
+	color : #ff8c00;
+	font-family : Comic Sans;
+	font-size : 20px;
+}
+
+.text-team h5{
+	color : #ff8c00;
+	font-family : Comic Sans;
+	font-size : 20px;
+	font-weight : 300;
+}
